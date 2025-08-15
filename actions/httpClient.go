@@ -47,3 +47,5 @@ func ChatOllama(url string, ollamaReq models.Request) (*models.Response, error) 
 	err = json.NewDecoder(httpResp.Body).Decode(&ollamaResp)
 	return &ollamaResp, err
 }
+
+
